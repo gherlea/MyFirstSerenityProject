@@ -16,6 +16,7 @@ public class SearchSteps extends ScenarioSteps {
         homePage.setSearchField(keyword);
         homePage.clickSearchIcon();
     }
+
     @Step
     public void verifyProductInResults(String productName){
         Assert.assertTrue(searchResultsPage.checkListForProduct(productName));

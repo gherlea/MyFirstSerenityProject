@@ -4,6 +4,7 @@ import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.fasttrackit.pages.CartPage;
 import org.fasttrackit.pages.ProductPage;
+import org.junit.Assert;
 
 public class CartSteps  extends ScenarioSteps {
 
@@ -16,6 +17,15 @@ public class CartSteps  extends ScenarioSteps {
     }
     @Step
     public void verifySuccessMessage(String productName){
-      cartPage.verifySuccessMessage(productName);
+      cartPage.verifySuccessMessage(" " );
     }
+    @Step
+    public void checkCartSubtotalIsCorrect(){
+        Assert.assertTrue(cartPage.isSubTotalPriceCalculatedCorrecty());
+    }
+     @Step
+    public void checkCartGrandTotalIsCorrect(){
+        Assert.assertTrue(cartPage.isGrandTotalpriceCorrect());
+
+     }
 }

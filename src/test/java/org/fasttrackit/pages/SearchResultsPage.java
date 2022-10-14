@@ -19,14 +19,14 @@ public class SearchResultsPage extends PageObject {
         }
         return false;
     }
-    public void selectProductFromList(String product){
+
+    public void selectProductFromList(String product) {
         for (WebElementFacade element : productsList) {
             if (element.findElement(By.cssSelector(".product-name a")).getText().equalsIgnoreCase(product)) {
-   //             clickOn(element);
-              element.findElement(By.cssSelector("a.product-image")).click();
-            break;
-
+                //             clickOn(element);
+                element.findElement(By.cssSelector("a.product-image")).click();
+                break;
             }
-         }
+        }
     }
 }
