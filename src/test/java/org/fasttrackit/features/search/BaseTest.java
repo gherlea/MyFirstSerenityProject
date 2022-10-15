@@ -28,9 +28,8 @@ public class BaseTest {
     @Steps
     protected CartSteps cartSteps;
 
-   @Before
+    @Before
     public void maximize(){
-       webDriver.manage().window().maximize();
+        webDriver.manage().window().maximize();
     }
-
 }

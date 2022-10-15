@@ -13,19 +13,20 @@ public class CartSteps  extends ScenarioSteps {
 
     @Step
     public void clickAddToCart(){
+
         productPage.clickAddToCartButton();
     }
     @Step
     public void verifySuccessMessage(String productName){
-      cartPage.verifySuccessMessage(" " );
+      cartPage.verifySuccessMessage("");
     }
     @Step
     public void checkCartSubtotalIsCorrect(){
-        Assert.assertTrue(cartPage.isSubTotalPriceCalculatedCorrecty());
+
+        Assert.assertTrue(cartPage.isSubtotalPriceCalculatedCorrectly());
     }
      @Step
     public void checkCartGrandTotalIsCorrect(){
-        Assert.assertTrue(cartPage.isGrandTotalpriceCorrect());
-
+        Assert.assertTrue(cartPage.isGrandTotalPriceCorrect());
      }
 }
