@@ -35,6 +35,7 @@ public class CartTest extends BaseTest {
   //    navigare la cos
 
         cartSteps.checkCartSubtotalIsCorrect();
+        
         }
     }
 
