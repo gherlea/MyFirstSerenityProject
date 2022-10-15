@@ -6,7 +6,8 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import java.util.List;
 
 public class CartPage extends BasePage {
-    @FindBy(css = ". succes-msg span")
+
+    @FindBy(css = ".succes-msg span")
     private WebElementFacade successMessage;
 
     @FindBy(css = ".product-cart-total .price")
@@ -18,7 +19,7 @@ public class CartPage extends BasePage {
     @FindBy(css = "tr:last-child .a-right > .price")
     private WebElementFacade cartShippingFeeSpan;
 
-    @FindBy(css = "tr:tfoot .a-right > .price")
+    @FindBy(css = "tfoot .a-right > .price")
     private WebElementFacade cartGrandTotalPriceSpan;
 
     public void verifySuccessMessage(String productName) {
@@ -40,7 +41,7 @@ public class CartPage extends BasePage {
         public boolean isGrandTotalPriceCorrect(){
         int subtotal = getPriceFromString(cartSubtotalPriceSpan.getText());
         int fees = getPriceFromString(cartShippingFeeSpan.getText());
-        int expected = subtotal + fees;
+        int expected = subtotal+fees;
         int actual = getPriceFromString(cartGrandTotalPriceSpan.getText());
         return expected == actual;
 

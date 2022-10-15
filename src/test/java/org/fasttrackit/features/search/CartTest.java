@@ -24,6 +24,7 @@ public class CartTest extends BaseTest {
     @Test
     public void verifyPricesTest() {
         loginSteps.doLogin(Constants.USER_EMAIL, Constants.USER_PASS);
+
         searchSteps.doSearch("memory");
         productSteps.selectProductFromList("16GB MEMORY CARD");
         cartSteps.clickAddToCart();
@@ -35,7 +36,7 @@ public class CartTest extends BaseTest {
   //    navigare la cos
 
         cartSteps.checkCartSubtotalIsCorrect();
-        
+
         }
     }
 
