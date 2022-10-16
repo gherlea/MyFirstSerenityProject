@@ -2,7 +2,7 @@ package org.fasttrackit.features.search;
 import org.fasttrackit.utils.Constants;
 import org.junit.Test;
 
-public class SearchTest extends BaseTest{
+    public class SearchTest extends BaseTest{
 
     private String searchItem = "necklace";
 
@@ -23,6 +23,6 @@ public class SearchTest extends BaseTest{
         loginSteps.doLogin(Constants.USER_EMAIL, Constants.USER_PASS);
             searchSteps.doSearch("memory");
             searchSteps.verifyProductInResults("8GB MEMORY CARD");
-            }
+    }
 }
 

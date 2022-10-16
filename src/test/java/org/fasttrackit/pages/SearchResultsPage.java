@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 import java.util.List;
 
-public class SearchResultsPage extends PageObject {
+    public class SearchResultsPage extends PageObject {
     @FindBy(css = ".products-grid li.item")
     private List<WebElementFacade> productsList;
 

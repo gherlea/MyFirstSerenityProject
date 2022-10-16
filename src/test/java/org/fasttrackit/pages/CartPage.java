@@ -5,7 +5,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 import java.util.List;
 
-public class CartPage extends BasePage {
+    public class CartPage extends BasePage {
 
     @FindBy(css = ".succes-msg span")
     private WebElementFacade successMessage;
@@ -44,6 +44,5 @@ public class CartPage extends BasePage {
         int expected = subtotal+fees;
         int actual = getPriceFromString(cartGrandTotalPriceSpan.getText());
         return expected == actual;
-
     }
 }

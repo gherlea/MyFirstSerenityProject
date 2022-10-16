@@ -6,10 +6,8 @@ import org.fasttrackit.pages.AccountPage;
 import org.fasttrackit.pages.HomePage;
 import org.fasttrackit.pages.LoginPage;
 
-import javax.swing.*;
 
-
-public class LoginSteps extends ScenarioSteps {
+    public class LoginSteps extends ScenarioSteps {
 
     private HomePage homePage;
     private LoginPage loginPage;
@@ -49,5 +47,4 @@ public class LoginSteps extends ScenarioSteps {
         setCredentials(email, password);
         clickLogin();
     }
-
 }

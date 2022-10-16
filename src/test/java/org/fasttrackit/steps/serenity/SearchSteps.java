@@ -21,5 +21,4 @@ public class SearchSteps extends ScenarioSteps {
     public void verifyProductInResults(String productName){
         Assert.assertTrue(searchResultsPage.checkListForProduct(productName));
     }
-
 }

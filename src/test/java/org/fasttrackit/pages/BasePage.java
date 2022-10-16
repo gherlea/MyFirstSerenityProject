@@ -10,8 +10,5 @@ public class BasePage extends PageObject {
         return Integer.parseInt(price
                 .replace(" RON", "")
                 .replace(",", ""));
-
-
-
     }
 }

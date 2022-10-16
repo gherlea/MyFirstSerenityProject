@@ -6,7 +6,7 @@ import org.fasttrackit.pages.CartPage;
 import org.fasttrackit.pages.ProductPage;
 import org.junit.Assert;
 
-public class CartSteps  extends ScenarioSteps {
+    public class CartSteps  extends ScenarioSteps {
 
     private ProductPage productPage;
     private CartPage cartPage;

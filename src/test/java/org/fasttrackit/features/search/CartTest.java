@@ -3,7 +3,7 @@ package org.fasttrackit.features.search;
 import org.fasttrackit.utils.Constants;
 import org.junit.Test;
 
-public class CartTest extends BaseTest {
+    public class CartTest extends BaseTest {
 
     @Test
     public void addProductToCart() {
@@ -34,10 +34,9 @@ public class CartTest extends BaseTest {
         cartSteps.clickAddToCart();
 
   //    navigare la cos
-
         cartSteps.checkCartSubtotalIsCorrect();
-
-        }
+        cartSteps.checkCartGrandTotalIsCorrect();
     }
+}
 
 

@@ -3,7 +3,7 @@ package org.fasttrackit.features.search;
 import org.fasttrackit.utils.Constants;
 import org.junit.Test;
 
-public class LoginTests extends BaseTest{
+    public class LoginTests extends BaseTest{
 
 
     @Test
