@@ -7,7 +7,7 @@ import java.util.List;
 
     public class CartPage extends BasePage {
 
-    @FindBy(css = ".succes-msg span")
+    @FindBy(css = ".success-msg span")
     private WebElementFacade successMessage;
 
     @FindBy(css = ".product-cart-total .price")

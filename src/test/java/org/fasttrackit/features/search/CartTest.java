@@ -35,7 +35,6 @@ import org.junit.Test;
 
   //    navigare la cos
         cartSteps.checkCartSubtotalIsCorrect();
-        cartSteps.checkCartGrandTotalIsCorrect();
     }
 }
 
